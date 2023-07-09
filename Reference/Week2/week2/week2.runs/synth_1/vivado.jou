@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Jul 10 00:12:54 2023
+# Process ID: 11416
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1
+# Command line: vivado.exe -log uart_tx.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_tx.tcl
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/uart_tx.vds
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source uart_tx.tcl -notrace

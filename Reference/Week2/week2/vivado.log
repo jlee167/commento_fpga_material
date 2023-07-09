@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  9 16:50:41 2023
+# Process ID: 23476
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9968 C:\Users\Jihoon Lee\Desktop\commento\commento_fpga_material\Reference\Week2\week2\week2.xpr
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/vivado.log
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jihoon Lee/Desktop/h264v2/rtl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1060.473 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "begin". [C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/uart.sv:93]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/uart.sv:100]
+[Sun Jul  9 19:52:30 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+CRITICAL WARNING: [HDL 9-806] Syntax error near "begin". [C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/uart.sv:114]
+CRITICAL WARNING: [HDL 9-806] Syntax error near "end". [C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/uart.sv:123]
+[Sun Jul  9 20:19:32 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Sun Jul  9 20:27:46 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 10 00:00:08 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Mon Jul 10 00:12:52 2023] Launched synth_1...
+Run output will be captured here: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul 10 00:13:39 2023...
