@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  9 16:50:41 2023
+# Process ID: 23476
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9968 C:\Users\Jihoon Lee\Desktop\commento\commento_fpga_material\Reference\Week2\week2\week2.xpr
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/vivado.log
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.xpr}
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1

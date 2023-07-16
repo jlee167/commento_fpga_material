@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul 16 15:49:36 2023
+# Process ID: 15604
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.runs/synth_1
+# Command line: vivado.exe -log if_spi.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source if_spi.tcl
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.runs/synth_1/if_spi.vds
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source if_spi.tcl -notrace
