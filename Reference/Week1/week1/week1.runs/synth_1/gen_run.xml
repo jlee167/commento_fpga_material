@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-3" LaunchTime="1687106283">
+<GenRun Id="synth_1" LaunchPart="xc7a35tfgg484-3" LaunchTime="1689516840">
   <File Type="PA-TCL" Name="gray_encoder.tcl"/>
   <File Type="REPORTS-TCL" Name="gray_encoder_reports.tcl"/>
   <File Type="RDS-RDS" Name="gray_encoder.vds"/>
   <File Type="RDS-UTIL" Name="gray_encoder_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="gray_encoder_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="gray_encoder.dcp"/>
-  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/gray_encoder.sv">
       <FileInfo>
@@ -40,6 +40,30 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/multiplier.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_multiplier.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_gray.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_adder.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>

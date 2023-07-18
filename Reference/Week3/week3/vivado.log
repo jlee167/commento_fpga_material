@@ -11,3 +11,64 @@
 # Running On: DESKTOP-FG0QD84, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 8, Host memory: 17109 MB
 #-----------------------------------------------------------
 start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Jihoon Lee/Desktop/h264v2/rtl'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'pll_wizard' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'pll_wizard' (customized with software release 2020.1) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'fifo_8b' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'fifo_8b' (customized with software release 2020.1) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'week3.xpr' upgraded for this version of Vivado.
+upgrade_project -migrate_output_products
+WARNING: [IP_Flow 19-2162] IP 'pll_wizard' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'pll_wizard' (customized with software release 2020.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'pll_wizard.xci'
+  Source files are located in 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.srcs/sources_1/ip/pll_wizard'
+  Output files are located in 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.gen/sources_1/ip/pll_wizard'.
+WARNING: [IP_Flow 19-2162] IP 'fifo_8b' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'fifo_8b' (customized with software release 2020.1) has a different revision in the IP Catalog.
+INFO: [Coretcl 2-1816] Migrated 'fifo_8b.xci'
+  Source files are located in 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.srcs/sources_1/ip/fifo_8b'
+  Output files are located in 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.gen/sources_1/ip/fifo_8b'.
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -srcset fifo_8b [get_ips  {fifo_8b pll_wizard}] -log ip_upgrade.log
+Upgrading 'fifo_8b'
+INFO: [Project 1-386] Moving file 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.srcs/sources_1/ip/fifo_8b/fifo_8b.xci' from fileset 'fifo_8b' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded fifo_8b (FIFO Generator 13.2) from revision 5 to revision 7
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_8b'...
+Upgrading 'pll_wizard'
+INFO: [Project 1-386] Moving file 'c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/week3.srcs/sources_1/ip/pll_wizard/pll_wizard.xci' from fileset 'pll_wizard' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded pll_wizard (Clocking Wizard 6.0) from revision 5 to revision 11
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'pll_wizard'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week3/week3/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips {fifo_8b pll_wizard}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul 16 22:55:28 2023...
