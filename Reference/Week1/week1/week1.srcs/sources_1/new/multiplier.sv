@@ -4,32 +4,6 @@
 *   기능: a * b = product
 ****************************************/
 
-module adder_chain #(
-  parameter WIDTH = 8
-)(
-  input   [WIDTH-1:0] a, b, 
-  input   cin,
-  output  [WIDTH-1:0] s, 
-  output  cout
-);
-
-  wire [WIDTH:0] carry;
-  assign carry[0] = cin;
-  assign cout = carry[WIDTH];
-
-  for (genvar i = 0; i < WIDTH; i++) begin
-    full_adder fa_inst(
-      .a    (a[i]),
-      .b    (b[i]),
-      .cin  (carry[i]),
-      .s    (s[i]),
-      .cout (carry[i+1])
-    );
-  end
-endmodule
-
-
-
 
 module multiplier #(
 	parameter WIDTH = 8
@@ -53,9 +27,7 @@ module multiplier #(
           assign partial_sum[col][row] = a[row] & b[col];
         end 
       end else if (col == 1) begin
-        adder_chain #(
-          .WIDTH(WIDTH)
-        ) add_8b_inst (
+        carry_ripple_adder cra (
            .a    (b[col] ? a : 8'b0) 
           ,.b    ({1'b0, partial_sum[col-1][WIDTH-1:1]})
           ,.cin  (1'b0)
@@ -63,9 +35,7 @@ module multiplier #(
           ,.cout (carry[col])
         ); 
       end else begin
-        adder_chain #(
-          .WIDTH(WIDTH)
-        ) add_8b_inst (
+        carry_ripple_adder cra (
            .a    (b[col] ? a : 8'b0) 
           ,.b    ({carry[col-1], partial_sum[col-1][WIDTH-1:1]})
           ,.cin  (1'b0)
