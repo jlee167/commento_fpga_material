@@ -90,7 +90,8 @@ initial begin
 		cin = test_cin[i];
 
 		
-		#5	$display("[%0d] a = 0x%0h, b = 0x%0h, cin=%b, sum=0x%0h, cout=%0b", i, a, b, cin, sum, cout);
+		#5	
+		$display("[%0d] a = 0x%0h, b = 0x%0h, cin=%b, sum=0x%0h, cout=%0b", i, a, b, cin, sum, cout);
 		
 		if ((cout == cout_golden[i]) && (sum == sum_golden[i])) begin
 			cnt_success++;

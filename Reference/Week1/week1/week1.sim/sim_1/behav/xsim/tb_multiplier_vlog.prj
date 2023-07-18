@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../week1.srcs/sources_1/new/carry_ripple_adder.sv" \
+"../../../../week1.srcs/sources_1/new/multiplier.sv" \
+"../../../../week1.srcs/sources_1/new/tb_multiplier.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
