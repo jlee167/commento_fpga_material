@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log uart_tx.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_tx.tcl -notrace
+EAStep vivado -log sram_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sram_controller.tcl -notrace
 
 

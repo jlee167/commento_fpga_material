@@ -1,8 +1,8 @@
-set_property IOSTANDARD LVCMOS33 [get_ports tx]
-
 set_property IOSTANDARD LVCMOS33 [get_ports clk]
+set_property IOSTANDARD LVCMOS33 [get_ports tx]
 set_property PACKAGE_PIN L17 [get_ports clk]
 set_property PACKAGE_PIN J18 [get_ports tx]
+create_clock -period 83.330 -name clk_12m -waveform {0.000 41.665} [get_ports -filter { NAME =~  "*" && DIRECTION == "IN" }]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]

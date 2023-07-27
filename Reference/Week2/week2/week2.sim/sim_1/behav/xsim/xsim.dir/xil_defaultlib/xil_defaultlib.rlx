@@ -1,0 +1,7 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/tb_traffic_fsm.sv,1690445250,systemVerilog,,,,tb_traffic_fsm,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/traffic_fsm.sv,1690445560,systemVerilog,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/tb_traffic_fsm.sv,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week2/week2/week2.srcs/sources_1/new/tb_traffic_fsm.sv,,$unit_traffic_fsm_sv_673210697;light_fsm,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,

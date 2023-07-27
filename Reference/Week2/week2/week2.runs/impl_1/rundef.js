@@ -25,7 +25,7 @@ eval( EAInclude(ISEJScriptLib) );
 // pre-commands:
 ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log uart_tx.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source uart_tx.tcl -notrace" );
+         "-log sram_controller.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source sram_controller.tcl -notrace" );
 
 
 
