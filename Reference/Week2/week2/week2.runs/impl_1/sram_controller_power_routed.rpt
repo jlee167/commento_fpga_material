@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Mon Jul 24 22:41:45 2023
+| Date             : Fri Jul 28 16:54:53 2023
 | Host             : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
 | Command          : report_power -file sram_controller_power_routed.rpt -pb sram_controller_power_summary_routed.pb -rpx sram_controller_power_routed.rpx
 | Design           : sram_controller
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.199        |
+| Total On-Chip Power (W)  | 0.197        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.127        |
+| Dynamic (W)              | 0.125        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 84.0         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        6 |       --- |             --- |
-| Slice Logic              |    <0.001 |     5055 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1513 |     20800 |            7.27 |
+| Slice Logic              |    <0.001 |     5056 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     1514 |     20800 |            7.28 |
 |   Register               |    <0.001 |     2612 |     41600 |            6.28 |
 |   LUT as Shift Register  |    <0.001 |      132 |      9600 |            1.38 |
 |   CARRY4                 |    <0.001 |       44 |      8150 |            0.54 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      9600 |            0.25 |
 |   F7/F8 Muxes            |    <0.001 |        4 |     32600 |            0.01 |
 |   Others                 |     0.000 |      307 |       --- |             --- |
-| Signals                  |     0.001 |     3639 |       --- |             --- |
+| Signals                  |     0.001 |     3634 |       --- |             --- |
 | Block RAM                |    <0.001 |      1.5 |        50 |            3.00 |
 | MMCM                     |     0.104 |        1 |         5 |           20.00 |
-| I/O                      |     0.014 |       31 |       106 |           29.25 |
+| I/O                      |     0.012 |       31 |       106 |           29.25 |
 | Static Power             |     0.072 |          |           |                 |
-| Total                    |     0.199 |          |           |                 |
+| Total                    |     0.197 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Vccint    |       1.000 |     0.019 |       0.009 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.058 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -148,7 +148,8 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| sram_controller          |     0.127 |
+| sram_controller          |     0.125 |
+|   data_IOBUF[0]_inst     |     0.001 |
 |   dbg_hub                |     0.002 |
 |     inst                 |     0.002 |
 |       BSCANID.u_xsdbm_id |     0.002 |

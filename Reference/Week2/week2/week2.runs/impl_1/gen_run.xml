@@ -1,66 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1690205885">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1690530689">
   <File Type="ROUTE-PWR" Name="sram_controller_power_routed.rpt"/>
   <File Type="PA-TCL" Name="sram_controller.tcl"/>
+  <File Type="BITSTR-MMI" Name="sram_controller.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="sram_controller_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="sram_controller_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-SUM" Name="sram_controller_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="sram_controller_reports.tcl"/>
-  <File Type="BITSTR-MSK" Name="sram_controller.msk"/>
-  <File Type="ROUTE-CLK" Name="sram_controller_clock_utilization_routed.rpt"/>
-  <File Type="RDI-RDI" Name="sram_controller.vdi"/>
-  <File Type="BG-BIT" Name="sram_controller.bit"/>
-  <File Type="BG-DRC" Name="sram_controller.drc"/>
-  <File Type="BG-BGN" Name="sram_controller.bgn"/>
-  <File Type="BG-BIN" Name="sram_controller.bin"/>
-  <File Type="BITSTR-RBT" Name="sram_controller.rbt"/>
-  <File Type="BITSTR-NKY" Name="sram_controller.nky"/>
-  <File Type="BITSTR-BMM" Name="sram_controller_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="sram_controller.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="sram_controller_methodology_drc_routed.rpt"/>
-  <File Type="BITSTR-SYSDEF" Name="sram_controller.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sram_controller_methodology_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="sram_controller.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-TIMING" Name="sram_controller_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="sram_controller_opt.dcp"/>
   <File Type="OPT-DRC" Name="sram_controller_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="sram_controller.hwdef"/>
+  <File Type="PWROPT-DCP" Name="sram_controller_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="sram_controller_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="sram_controller_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="sram_controller_placed.dcp"/>
   <File Type="PLACE-IO" Name="sram_controller_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="sram_controller_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="sram_controller_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="sram_controller_utilization_placed.pb"/>
-  <File Type="ROUTE-RQS" Name="sram_controller_routed.rqs"/>
   <File Type="PLACE-CTRL" Name="sram_controller_control_sets_placed.rpt"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="sram_controller_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="sram_controller_incremental_reuse_pre_placed.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="BG-BIN" Name="sram_controller.bin"/>
+  <File Type="PLACE-TIMING" Name="sram_controller_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="sram_controller_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="sram_controller.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="sram_controller_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="sram_controller_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="sram_controller_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="sram_controller.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="sram_controller_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="sram_controller_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="sram_controller_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="sram_controller_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="sram_controller_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="sram_controller_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="sram_controller_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="sram_controller_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sram_controller_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="sram_controller_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="sram_controller_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="sram_controller_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="sram_controller_route_status.pb"/>
-  <File Type="ROUTE-DCP" Name="sram_controller_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="sram_controller_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="sram_controller_routed_bb.dcp"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="sram_controller_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="sram_controller_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="sram_controller_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="sram_controller_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="sram_controller_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="sram_controller_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="sram_controller_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="sram_controller_bus_skew_routed.rpx"/>
-  <File Type="OPT-DCP" Name="sram_controller_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="sram_controller_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="sram_controller_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="sram_controller_postplace_pwropt.dcp"/>
-  <File Type="PHYSOPT-DCP" Name="sram_controller_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="sram_controller_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="sram_controller_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-DRC-RPX" Name="sram_controller_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="sram_controller_methodology_drc_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="sram_controller_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="sram_controller_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="sram_controller_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="sram_controller_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="sram_controller.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="sram_controller_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="sram_controller_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="sram_controller.nky"/>
+  <File Type="BITSTR-BMM" Name="sram_controller_bd.bmm"/>
   <File Type="PDI-FILE" Name="sram_controller.pdi"/>
   <File Type="RCFI_FILE" Name="sram_controller.rcfi"/>
   <File Type="CFI_FILE" Name="sram_controller.cfi"/>
   <File Type="RNPI_FILE" Name="sram_controller.rnpi"/>
   <File Type="NPI_FILE" Name="sram_controller.npi"/>
   <File Type="RBD_FILE" Name="sram_controller.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="sram_controller.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="sram_controller.sysdef"/>
+  <File Type="BG-BGN" Name="sram_controller.bgn"/>
+  <File Type="BG-DRC" Name="sram_controller.drc"/>
+  <File Type="RDI-RDI" Name="sram_controller.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="sram_controller_routed.rqs"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="sram_controller_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/ip/ila_sram_ctrl/ila_sram_ctrl.xci">
@@ -86,6 +104,14 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/traffic_fsm.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_traffic_fsm.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -142,7 +168,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="mmcm_50m"/>
   <BlockFileSet Type="BlockSrcs" Name="vio_0"/>

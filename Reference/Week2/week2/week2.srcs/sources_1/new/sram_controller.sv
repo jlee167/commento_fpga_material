@@ -96,6 +96,7 @@ end
 
 /* 다음 상태 계산 */
 always_comb begin
+
 	next_state = state;
 
 	unique case(state)
@@ -106,14 +107,16 @@ always_comb begin
 				next_state = WRITE;
 			else if (rd_idx < NUM_TEST_DATA)
 				next_state = READ;
+			else 
+				next_state = DONE;
 		WRITE:
 			if ((ce_n) & (we_n) & tri_sel)
 				next_state = READY;
 		READ:
 			if ((~ce_n) & (~oe_n))
 				next_state = READY;
-		default:
-			next_state = RESET;
+		DONE:
+			next_state = state;
 	endcase
 end
 
