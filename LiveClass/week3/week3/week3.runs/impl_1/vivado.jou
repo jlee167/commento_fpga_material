@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Jul 31 23:02:56 2023
+# Process ID: 7668
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.runs/impl_1
+# Command line: vivado.exe -log lut_ff.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lut_ff.tcl -notrace
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.runs/impl_1/lut_ff.vdi
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.runs/impl_1\vivado.jou
+# Running On: DESKTOP-FG0QD84, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 8, Host memory: 17109 MB
+#-----------------------------------------------------------
+source lut_ff.tcl -notrace

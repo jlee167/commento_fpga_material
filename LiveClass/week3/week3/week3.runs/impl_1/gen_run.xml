@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1690812168">
+  <File Type="ROUTE-PWR" Name="lut_ff_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lut_ff.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="lut_ff_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lut_ff_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="lut_ff.msk"/>
+  <File Type="ROUTE-CLK" Name="lut_ff_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="lut_ff.vdi"/>
+  <File Type="BG-BIT" Name="lut_ff.bit"/>
+  <File Type="BG-DRC" Name="lut_ff.drc"/>
+  <File Type="BG-BGN" Name="lut_ff.bgn"/>
+  <File Type="BG-BIN" Name="lut_ff.bin"/>
+  <File Type="BITSTR-RBT" Name="lut_ff.rbt"/>
+  <File Type="BITSTR-NKY" Name="lut_ff.nky"/>
+  <File Type="BITSTR-BMM" Name="lut_ff_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="lut_ff.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lut_ff_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="lut_ff.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lut_ff_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="lut_ff.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="lut_ff_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lut_ff.hwdef"/>
+  <File Type="PLACE-IO" Name="lut_ff_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lut_ff_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lut_ff_utilization_placed.pb"/>
+  <File Type="ROUTE-RQS" Name="lut_ff_routed.rqs"/>
+  <File Type="PLACE-CTRL" Name="lut_ff_control_sets_placed.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lut_ff_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-DRC" Name="lut_ff_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lut_ff_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lut_ff_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lut_ff_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lut_ff_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="lut_ff_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lut_ff_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lut_ff_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lut_ff_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lut_ff_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lut_ff_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lut_ff_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lut_ff_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lut_ff_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="lut_ff_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="lut_ff_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="lut_ff_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lut_ff_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="lut_ff_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lut_ff_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lut_ff_postroute_physopt_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="lut_ff_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lut_ff_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="lut_ff.pdi"/>
+  <File Type="RCFI_FILE" Name="lut_ff.rcfi"/>
+  <File Type="CFI_FILE" Name="lut_ff.cfi"/>
+  <File Type="RNPI_FILE" Name="lut_ff.rnpi"/>
+  <File Type="NPI_FILE" Name="lut_ff.npi"/>
+  <File Type="RBD_FILE" Name="lut_ff.rbd"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="lut_ff_postroute_physopted.rqs"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/lut_ff.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/lut.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fifo_dual.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/bram_dual.sv">
+      <FileInfo SFType="Verilog">
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tb_mem.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lut_ff"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/lut.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/lut_ff.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/lut_ff.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/lut.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="mmcm_120mhz"/>
+</GenRun>
