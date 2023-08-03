@@ -1,6 +1,132 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:30 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:29 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mmcm_uart'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mmcm_uart (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:28 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_tx'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_tx (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:26 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_rx'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_rx (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:23 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Aug  2 22:53:21 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_8b'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of fifo_8b (xilinx.com:ip:fifo_generator:13.2 (Rev. 7)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
 | Date         : Sun Jul 16 22:11:16 2023
 | Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
