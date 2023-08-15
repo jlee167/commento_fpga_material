@@ -40,14 +40,14 @@ fifo_dual fifo_dual_inst(
 );
 
 
-
+assign rd_en = ~empty;
 
 initial begin
 	wclk = 0;
 	rclk = 0;
 	rst = 0;
 	wr_en = 0;
-	rd_en = 0;
+	//rd_en = 0;
 
 	#20
 	rst = 1;
@@ -57,19 +57,19 @@ initial begin
 
 	#100
 	wr_en = 1;
-	rd_en = 1;
+	//rd_en = 1;
 end
 
 
 // 쓰기클럭은 50Mhz
 always begin
-	#10	wclk = ~wclk;
+	#5	wclk = ~wclk;
 end
 
 
 // 읽기 클럭은 100Mhz
 always begin
-	#5 rclk = ~rclk;
+	#10 rclk = ~rclk;
 end
 
 

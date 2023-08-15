@@ -63,7 +63,8 @@ fifo_8b your_instance_name (
   .rd_en(rd_en),    // input wire rd_en
   .dout(dout),      // output wire [7 : 0] dout
   .full(full),      // output wire full
-  .empty(empty)    // output wire empty
+  .empty(empty),    // output wire empty
+  .valid(valid)    // output wire valid
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

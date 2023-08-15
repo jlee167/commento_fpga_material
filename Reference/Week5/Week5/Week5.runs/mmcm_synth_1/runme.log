@@ -1,0 +1,21 @@
+
+*** Running vivado
+    with args -log mmcm.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mmcm.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source mmcm.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: mmcm
+INFO: [IP_Flow 19-6922] IPCACHE: Exporting cached entry 76589976c891461c to dir: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.cache/ip/2022.2/7/6/76589976c891461c/mmcm.dcp to C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1/mmcm.dcp.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.cache/ip/2022.2/7/6/76589976c891461c/mmcm_sim_netlist.v to C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1/mmcm_sim_netlist.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.cache/ip/2022.2/7/6/76589976c891461c/mmcm_sim_netlist.vhdl to C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1/mmcm_sim_netlist.vhdl.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.cache/ip/2022.2/7/6/76589976c891461c/mmcm_stub.v to C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1/mmcm_stub.v.
+INFO: [IP_Flow 19-6928] IPCACHE: copied cached file c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.cache/ip/2022.2/7/6/76589976c891461c/mmcm_stub.vhdl to C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week5/Week5/Week5.runs/mmcm_synth_1/mmcm_stub.vhdl.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP mmcm, cache-ID = 76589976c891461c.
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 15 03:59:05 2023...

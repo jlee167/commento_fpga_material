@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/i2c_test.sv,1691415885,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_i2c_test.sv,,i2c_master,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/if_i2c.sv,1691387303,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_i2c.sv,,sccb_master,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/spi_bmp280.sv,1691398790,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_spi.sv,,spi_bmp280,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_i2c.sv,1691321866,systemVerilog,,,,tb_i2c,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_i2c_test.sv,1691414340,systemVerilog,,,,tb_i2c_test,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/Reference/Week4/week4/week4.srcs/sources_1/new/tb_spi.sv,1691398093,systemVerilog,,,,tb_spi,,uvm,,,,,,

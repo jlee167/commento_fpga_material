@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Aug 14 12:59:19 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'vio'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of vio (xilinx.com:ip:vio:3.0 (Rev. 23)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Aug 14 12:59:18 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'mmcm_spi'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of mmcm_spi (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Mon Aug 14 12:59:17 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_spi'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ila_spi (xilinx.com:ip:ila:6.2 (Rev. 12)) to Vivado generation flows.
+

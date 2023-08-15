@@ -3,7 +3,7 @@
 # 
 # Vivado(TM)
 # runme.sh: a Vivado-generated Runs Script for UNIX
-# Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+# Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 # 
 
 echo "This script was generated under a different operating system."
@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/Vitis/2020.1/bin;C:/Xilinx/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2020.1/bin
+  PATH=F:/Xilinx/Vitis/2022.2/bin;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.2/bin
 else
-  PATH=C:/Xilinx/Vitis/2020.1/bin;C:/Xilinx/Vivado/2020.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2020.1/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2020.1/bin:$PATH
+  PATH=F:/Xilinx/Vitis/2022.2/bin;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/bin/nt64;F:/Xilinx/Vivado/2022.2/ids_lite/ISE/lib/nt64:F:/Xilinx/Vivado/2022.2/bin:$PATH
 fi
 export PATH
 
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log if_spi.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source if_spi.tcl
+EAStep vivado -log spi_bmp280.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source spi_bmp280.tcl

@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_rgb_gray_behav/xsimk.exe -simmode gui -wdb tb_rgb_gray_behav.wdb -simrunnum 0 -socket 9770
+Design successfully loaded
+Design Loading Memory Usage: 17304 KB (Peak: 17304 KB)
+Design Loading CPU Usage: 46 ms
