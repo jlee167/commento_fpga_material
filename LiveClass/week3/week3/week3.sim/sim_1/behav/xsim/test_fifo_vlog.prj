@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../week3.gen/sources_1/ip/mmcm_120mhz" --include "../../../../week3.gen/sources_1/ip/mmcm_ip" \
+"../../../../week3.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+
+sv xil_defaultlib  --include "../../../../week3.gen/sources_1/ip/mmcm_120mhz" --include "../../../../week3.gen/sources_1/ip/mmcm_ip" \
+"../../../../week3.srcs/sim_1/new/test_fifo.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

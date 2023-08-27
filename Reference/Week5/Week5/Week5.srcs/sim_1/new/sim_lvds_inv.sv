@@ -37,13 +37,6 @@ always begin
 end
 
 
-logic [7:0] reg1, reg2;
-
-always @ (posedge clk) begin
-	reg2 [2:0] <= reg2[5:3]; 
-	reg2 [7:2] <= reg1[5:0]; 
-end
-
 
 always @ (posedge rx_clk_p) begin
 	#2.5

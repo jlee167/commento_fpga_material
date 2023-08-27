@@ -1,0 +1,8 @@
+set_property PACKAGE_PIN U10 [get_ports clk]
+set_property IOSTANDARD LVCMOS18 [get_ports din]
+set_property IOSTANDARD LVCMOS18 [get_ports clk]
+set_property IOSTANDARD LVCMOS18 [get_ports dout]
+set_property IOSTANDARD LVCMOS18 [get_ports rst_n]
+set_property PACKAGE_PIN U11 [get_ports din]
+set_property PACKAGE_PIN U12 [get_ports dout]
+set_property PACKAGE_PIN U13 [get_ports rst_n]

@@ -2,9 +2,6 @@
 2020.2
 Oct 14 2022
 05:20:55
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.gen/sources_1/ip/fifo_dual/sim/fifo_dual.v,1690850797,verilog,,,,fifo_dual,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v,1692274517,verilog,,,,fifo_generator_0,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz;../../../../week3.gen/sources_1/ip/mmcm_ip,,,,,
 C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sim_1/new/tb_fifo.sv,1691408040,systemVerilog,,,,tb_fifo,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/traffic_dut.sv,1691133049,systemVerilog,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/traffic_tb.sv,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/traffic_tb.sv,,$unit_traffic_dut_sv_2319005264;traffic_fsm,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/traffic_tb.sv,1691135694,systemVerilog,,,,traffic_tb,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/uart_tx.sv,1691136587,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/traffic_tb.sv,,uart_tx,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sim_1/new/test_fifo.sv,1692275803,systemVerilog,,,,test_fifo,,uvm,../../../../week3.gen/sources_1/ip/mmcm_120mhz;../../../../week3.gen/sources_1/ip/mmcm_ip,,,,,

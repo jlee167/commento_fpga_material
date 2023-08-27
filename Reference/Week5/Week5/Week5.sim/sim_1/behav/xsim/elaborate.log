@@ -8,6 +8,7 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_rgb_to_gray_sv_532008995
 Compiling module unisims_ver.BUFG
 Compiling module unisims_ver.IBUF
 Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...

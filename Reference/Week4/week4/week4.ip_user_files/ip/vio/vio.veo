@@ -55,8 +55,8 @@
 
 //----------- Begin Cut here for INSTANTIATION Template ---// INST_TAG
 vio your_instance_name (
-  .clk(clk),              // input wire clk
-  .probe_in0(probe_in0)  // input wire [0 : 0] probe_in0
+  .clk(clk),                // input wire clk
+  .probe_out0(probe_out0)  // output wire [0 : 0] probe_out0
 );
 // INST_TAG_END ------ End INSTANTIATION Template ---------
 

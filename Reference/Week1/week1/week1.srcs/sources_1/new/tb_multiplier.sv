@@ -3,6 +3,10 @@
 
 module tb_multiplier();
 
+
+localparam NUM_TESTS = 10;
+
+
 /* DUT 인터페이스 */
 logic [7:0] a, b;
 logic [15:0] product;
@@ -29,8 +33,8 @@ multiplier #(
 *		      테스트 진행
 ***************************************/
 initial begin
-	for (a = 1; a <= 10; a++) begin
-		for (b = 1; b <= 10; b++) begin
+	for (a = 1; a <= NUM_TESTS; a++) begin
+		for (b = 1; b <= NUM_TESTS; b++) begin
 			#5
 			if (product != (a * b)) begin
 				$display("[FAIL] a = %d, b = %d, product = %d", a, b, product);

@@ -3,6 +3,9 @@
 
 module tb_adder();
 
+localparam NUM_TESTS = 10;
+	
+
 /* DUT 인터페이스 */
 logic  	[7:0] a,b; 
 logic  	cin;
@@ -18,7 +21,7 @@ int cnt_fail;
 /************************************** 
 *			테스트 입력값
 ***************************************/
-logic [1:0][7:0] test_operands [10] = {
+logic [1:0][7:0] test_operands [NUM_TESTS] = {
 	{8'h00,8'hff},
 	{8'h23,8'h45},	
 	{8'hff,8'h01},
@@ -31,7 +34,7 @@ logic [1:0][7:0] test_operands [10] = {
 	{8'hc2,8'h48}
 };
 
-logic test_cin [10] = {
+logic test_cin [NUM_TESTS] = {
 	0,1,0,1,0,1,0,1,0,1
 };
 
@@ -40,8 +43,8 @@ logic test_cin [10] = {
 /************************************** 
 *		    기대 출력값 (정답)
 ***************************************/
-logic [7:0] sum_golden [10];
-logic cout_golden [10];
+logic [7:0] sum_golden [NUM_TESTS];
+logic cout_golden [NUM_TESTS];
 
 
 
@@ -74,7 +77,7 @@ initial begin
 	cnt_fail = 0;
 
 	/* 기대 출력값 계산 */
-	for (int i = 0; i < 10; i++) begin
+	for (int i = 0; i < NUM_TESTS; i++) begin
 		logic [8:0] added =   {1'b0, test_operands[i][0]} 
 							+ {1'b0, test_operands[i][1]} 
 							+ {8'b0, test_cin[i]};
@@ -84,7 +87,7 @@ initial begin
 	end
 
 	/* 테스트 입력값을 넣고 기대값과 출력값 비교 */
-	for (int i = 0; i < 10; i++) begin
+	for (int i = 0; i < NUM_TESTS; i++) begin
 		a = test_operands[i][1];
 		b = test_operands[i][0];
 		cin = test_cin[i];

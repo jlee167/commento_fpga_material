@@ -5,27 +5,208 @@
    <db_ref_list>
       <db_ref path="tb_rgb_gray_behav.wdb" id="1">
          <top_modules>
+            <top_module name="\$unit_rgb_to_gray_sv_532008995 " />
             <top_module name="glbl" />
             <top_module name="tb_rgb_gray" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="4,317.584 ns"></ZoomStartTime>
-      <ZoomEndTime time="4,362.085 ns"></ZoomEndTime>
-      <Cursor1Time time="4,322.500 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="646.582296 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="128"></NameColumnWidth>
-      <ValueColumnWidth column_width="96"></ValueColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="2" />
-   <wvobject fp_name="/tb_rgb_gray/dut/rxd" type="array">
-      <obj_property name="ElementShortName">rxd[0:0]</obj_property>
-      <obj_property name="ObjectShortName">rxd[0:0]</obj_property>
+   <WVObjectSize size="47" />
+   <wvobject fp_name="/tb_rgb_gray/rx_clk" type="logic">
+      <obj_property name="ElementShortName">rx_clk</obj_property>
+      <obj_property name="ObjectShortName">rx_clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_rgb_gray/dut/rxd_dly" type="array">
-      <obj_property name="ElementShortName">rxd_dly[0:0]</obj_property>
-      <obj_property name="ObjectShortName">rxd_dly[0:0]</obj_property>
+   <wvobject fp_name="/tb_rgb_gray/rxd" type="logic">
+      <obj_property name="ElementShortName">rxd</obj_property>
+      <obj_property name="ObjectShortName">rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/cnt_bytes" type="array">
+      <obj_property name="ElementShortName">cnt_bytes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_bytes[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/osc_12m" type="logic">
+      <obj_property name="ElementShortName">osc_12m</obj_property>
+      <obj_property name="ObjectShortName">osc_12m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/rx_clk_p" type="logic">
+      <obj_property name="ElementShortName">rx_clk_p</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/rx_clk_n" type="logic">
+      <obj_property name="ElementShortName">rx_clk_n</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/rxd_p" type="logic">
+      <obj_property name="ElementShortName">rxd_p</obj_property>
+      <obj_property name="ObjectShortName">rxd_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/rxd_n" type="logic">
+      <obj_property name="ElementShortName">rxd_n</obj_property>
+      <obj_property name="ObjectShortName">rxd_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/OSC_FREQ" type="other">
+      <obj_property name="ElementShortName">OSC_FREQ</obj_property>
+      <obj_property name="ObjectShortName">OSC_FREQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/OSC_PERIOD_NS" type="other">
+      <obj_property name="ElementShortName">OSC_PERIOD_NS</obj_property>
+      <obj_property name="ObjectShortName">OSC_PERIOD_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/RXC_FREQ" type="other">
+      <obj_property name="ElementShortName">RXC_FREQ</obj_property>
+      <obj_property name="ObjectShortName">RXC_FREQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/RXC_PERIOD_NS" type="other">
+      <obj_property name="ElementShortName">RXC_PERIOD_NS</obj_property>
+      <obj_property name="ObjectShortName">RXC_PERIOD_NS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/DESKEW_PATTERN" type="array">
+      <obj_property name="ElementShortName">DESKEW_PATTERN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">DESKEW_PATTERN[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/SYNC_PATTERN" type="array">
+      <obj_property name="ElementShortName">SYNC_PATTERN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SYNC_PATTERN[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider282">
+      <obj_property name="label">dut</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/osc_12m" type="logic">
+      <obj_property name="ElementShortName">osc_12m</obj_property>
+      <obj_property name="ObjectShortName">osc_12m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rx_clk_p" type="logic">
+      <obj_property name="ElementShortName">rx_clk_p</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rx_clk_n" type="logic">
+      <obj_property name="ElementShortName">rx_clk_n</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxd_p" type="logic">
+      <obj_property name="ElementShortName">rxd_p</obj_property>
+      <obj_property name="ObjectShortName">rxd_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxd_n" type="logic">
+      <obj_property name="ElementShortName">rxd_n</obj_property>
+      <obj_property name="ObjectShortName">rxd_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/out_valid" type="logic">
+      <obj_property name="ElementShortName">out_valid</obj_property>
+      <obj_property name="ObjectShortName">out_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/out_data" type="array">
+      <obj_property name="ElementShortName">out_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rx_clk" type="logic">
+      <obj_property name="ElementShortName">rx_clk</obj_property>
+      <obj_property name="ObjectShortName">rx_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rx_clk_dly" type="logic">
+      <obj_property name="ElementShortName">rx_clk_dly</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_dly</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rx_clk_des" type="array">
+      <obj_property name="ElementShortName">rx_clk_des[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_clk_des[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxd" type="logic">
+      <obj_property name="ElementShortName">rxd</obj_property>
+      <obj_property name="ObjectShortName">rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxd_dly" type="logic">
+      <obj_property name="ElementShortName">rxd_dly</obj_property>
+      <obj_property name="ObjectShortName">rxd_dly</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxd_des" type="array">
+      <obj_property name="ElementShortName">rxd_des[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rxd_des[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/serdes_bitslip" type="logic">
+      <obj_property name="ElementShortName">serdes_bitslip</obj_property>
+      <obj_property name="ObjectShortName">serdes_bitslip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/bitslip_wait" type="logic">
+      <obj_property name="ElementShortName">bitslip_wait</obj_property>
+      <obj_property name="ObjectShortName">bitslip_wait</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/align_done" type="logic">
+      <obj_property name="ElementShortName">align_done</obj_property>
+      <obj_property name="ObjectShortName">align_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/clk_serdes" type="logic">
+      <obj_property name="ElementShortName">clk_serdes</obj_property>
+      <obj_property name="ObjectShortName">clk_serdes</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/clk_idelay_ctrl" type="logic">
+      <obj_property name="ElementShortName">clk_idelay_ctrl</obj_property>
+      <obj_property name="ObjectShortName">clk_idelay_ctrl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/dlyclk_locked" type="logic">
+      <obj_property name="ElementShortName">dlyclk_locked</obj_property>
+      <obj_property name="ObjectShortName">dlyclk_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/rxclk_locked" type="logic">
+      <obj_property name="ElementShortName">rxclk_locked</obj_property>
+      <obj_property name="ObjectShortName">rxclk_locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/idelay_ready" type="logic">
+      <obj_property name="ElementShortName">idelay_ready</obj_property>
+      <obj_property name="ObjectShortName">idelay_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/img_r" type="array">
+      <obj_property name="ElementShortName">img_r[7:0]</obj_property>
+      <obj_property name="ObjectShortName">img_r[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/img_g" type="array">
+      <obj_property name="ElementShortName">img_g[7:0]</obj_property>
+      <obj_property name="ObjectShortName">img_g[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/img_b" type="array">
+      <obj_property name="ElementShortName">img_b[7:0]</obj_property>
+      <obj_property name="ObjectShortName">img_b[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/img_gray" type="array">
+      <obj_property name="ElementShortName">img_gray[7:0]</obj_property>
+      <obj_property name="ObjectShortName">img_gray[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/state" type="array">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/cnt_bytes" type="array">
+      <obj_property name="ElementShortName">cnt_bytes[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_bytes[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_rgb_gray/dut/SYNC_PATTERN" type="array">
+      <obj_property name="ElementShortName">SYNC_PATTERN[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SYNC_PATTERN[7:0]</obj_property>
    </wvobject>
 </wave_config>

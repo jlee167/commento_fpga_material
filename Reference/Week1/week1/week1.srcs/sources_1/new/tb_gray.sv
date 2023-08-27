@@ -4,9 +4,11 @@
 module tb_gray();
 
 
+localparam NUM_TESTS = 10;
+
 
 /* DUT 인터페이스 */
-reg 	[7:0] enc_in;
+logic 	[7:0] enc_in;
 wire 	[7:0] enc_out;
 wire 	[7:0] dec_in;
 wire 	[7:0] dec_out;
@@ -17,13 +19,13 @@ int cnt_fail;
 
 
 /* 테스트 입력값 */
-logic [7:0] test_bin [10] = {
+logic [7:0] test_bin [NUM_TESTS] = {
 	8'h00, 8'h01, 8'h02, 8'h03, 8'h04,
 	8'h05, 8'h06, 8'h07, 8'h08, 8'h09
 };
 
 /* 테스트 기대출력값 */
-logic [7:0] golden_gray [10] = {
+logic [7:0] golden_gray [NUM_TESTS] = {
 	8'h00, 8'h01, 8'h03, 8'h02, 8'h06,
 	8'h07, 8'h05, 8'h04, 8'h0c, 8'h0d
 };
@@ -58,7 +60,7 @@ initial begin
 	cnt_fail = 0;
 
 
-	for (int i = 0; i < 10; i++) begin
+	for (int i = 0; i < NUM_TESTS; i++) begin
 		enc_in = test_bin[i];
 
 		#5

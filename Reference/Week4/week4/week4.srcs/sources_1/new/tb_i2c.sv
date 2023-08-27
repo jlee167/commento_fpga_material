@@ -7,26 +7,31 @@ logic 	rst_n;
 logic 	scl;
 wire 	sda;
 
+pullup(sda);
 
-
-sccb_master dut(
-	.clk(clk),
-	.rst_n(rst_n),
+i2c_top dut(
+	.osc_12m(clk),
 	.scl(scl),
 	.sda(sda)
 );
 
 
+always_comb begin
+	dut.rst_n = rst_n;
+end
+
+
 initial begin
 	clk = 0;
 	rst_n = 1;
+	dut.clk_i2c = 0;
 
 	#30 rst_n = 0;
 	#30 rst_n = 1;
 end
 
 always begin
-	#5
+	#41.66
 	clk = ~clk;
 end
 

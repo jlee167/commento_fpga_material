@@ -58,8 +58,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ila_tx"/>
   <BlockFileSet Type="BlockSrcs" Name="fifo_8b"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_tx"/>
   <BlockFileSet Type="BlockSrcs" Name="mmcm_uart"/>
   <BlockFileSet Type="BlockSrcs" Name="ila"/>
   <BlockFileSet Type="BlockSrcs" Name="vio"/>

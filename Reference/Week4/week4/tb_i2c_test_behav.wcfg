@@ -3,73 +3,157 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="tb_i2c_test_behav.wdb" id="1">
+      <db_ref path="tb_i2c_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="tb_i2c_test" />
+            <top_module name="tb_i2c" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="15.981 ns"></ZoomEndTime>
-      <Cursor1Time time="0.004 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="403.500001 us"></ZoomEndTime>
+      <Cursor1Time time="0.000004 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="128"></NameColumnWidth>
-      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="13" />
-   <wvobject fp_name="/tb_i2c_test/dut/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/tb_i2c/dut/osc_12m" type="logic">
+      <obj_property name="ElementShortName">osc_12m</obj_property>
+      <obj_property name="ObjectShortName">osc_12m</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/rst_n" type="logic">
+   <wvobject fp_name="/tb_i2c/dut/rst_n" type="logic">
       <obj_property name="ElementShortName">rst_n</obj_property>
       <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/scl" type="logic">
+   <wvobject fp_name="/tb_i2c/dut/scl" type="logic">
       <obj_property name="ElementShortName">scl</obj_property>
       <obj_property name="ObjectShortName">scl</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/sda" type="logic">
+   <wvobject fp_name="/tb_i2c/dut/sda" type="logic">
       <obj_property name="ElementShortName">sda</obj_property>
       <obj_property name="ObjectShortName">sda</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/idx_byte" type="array">
-      <obj_property name="ElementShortName">idx_byte[1:0]</obj_property>
-      <obj_property name="ObjectShortName">idx_byte[1:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/dut/mclk" type="logic">
+      <obj_property name="ElementShortName">mclk</obj_property>
+      <obj_property name="ObjectShortName">mclk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/idx_bit" type="array">
-      <obj_property name="ElementShortName">idx_bit[3:0]</obj_property>
-      <obj_property name="ObjectShortName">idx_bit[3:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/dut/clk_i2c" type="logic">
+      <obj_property name="ElementShortName">clk_i2c</obj_property>
+      <obj_property name="ObjectShortName">clk_i2c</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/idx_div4" type="array">
-      <obj_property name="ElementShortName">idx_div4[1:0]</obj_property>
-      <obj_property name="ObjectShortName">idx_div4[1:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/dut/clk_locked" type="logic">
+      <obj_property name="ElementShortName">clk_locked</obj_property>
+      <obj_property name="ObjectShortName">clk_locked</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/ack" type="logic">
-      <obj_property name="ElementShortName">ack</obj_property>
-      <obj_property name="ObjectShortName">ack</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/oe" type="logic">
-      <obj_property name="ElementShortName">oe</obj_property>
-      <obj_property name="ObjectShortName">oe</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/sda_o" type="logic">
+   <wvobject fp_name="/tb_i2c/dut/sda_o" type="logic">
       <obj_property name="ElementShortName">sda_o</obj_property>
       <obj_property name="ObjectShortName">sda_o</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/state" type="array">
-      <obj_property name="ElementShortName">state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/dut/oe" type="logic">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/next_state" type="array">
-      <obj_property name="ElementShortName">next_state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">next_state[2:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_i2c_test/dut/wdata" type="array">
-      <obj_property name="ElementShortName">wdata[0:1][7:0]</obj_property>
-      <obj_property name="ObjectShortName">wdata[0:1][7:0]</obj_property>
+   <wvobject fp_name="/tb_i2c/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/scl" type="logic">
+      <obj_property name="ElementShortName">scl</obj_property>
+      <obj_property name="ObjectShortName">scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/sda" type="logic">
+      <obj_property name="ElementShortName">sda</obj_property>
+      <obj_property name="ObjectShortName">sda</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/sda_o" type="logic">
+      <obj_property name="ElementShortName">sda_o</obj_property>
+      <obj_property name="ObjectShortName">sda_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/oe" type="logic">
+      <obj_property name="ElementShortName">oe</obj_property>
+      <obj_property name="ObjectShortName">oe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/state" type="array">
+      <obj_property name="ElementShortName">state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/next_state" type="array">
+      <obj_property name="ElementShortName">next_state[4:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/addr" type="array">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/wdata" type="array">
+      <obj_property name="ElementShortName">wdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/rdata" type="array">
+      <obj_property name="ElementShortName">rdata[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rdata[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/ack" type="logic">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/idx_reg" type="array">
+      <obj_property name="ElementShortName">idx_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">idx_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/idx_byte" type="array">
+      <obj_property name="ElementShortName">idx_byte[2:0]</obj_property>
+      <obj_property name="ObjectShortName">idx_byte[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/idx_bit" type="array">
+      <obj_property name="ElementShortName">idx_bit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">idx_bit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/cnt_div4" type="array">
+      <obj_property name="ElementShortName">cnt_div4[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_div4[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/cnt_wait" type="array">
+      <obj_property name="ElementShortName">cnt_wait[7:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_wait[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/NUM_REGS" type="array">
+      <obj_property name="ElementShortName">NUM_REGS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_REGS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/SLAVE_ADDR_WRITE" type="array">
+      <obj_property name="ElementShortName">SLAVE_ADDR_WRITE[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SLAVE_ADDR_WRITE[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/SLAVE_ADDR_READ" type="array">
+      <obj_property name="ElementShortName">SLAVE_ADDR_READ[7:0]</obj_property>
+      <obj_property name="ObjectShortName">SLAVE_ADDR_READ[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_i2c/dut/sccb/OV5640_REGS" type="array">
+      <obj_property name="ElementShortName">OV5640_REGS[0:3][0:1][7:0]</obj_property>
+      <obj_property name="ObjectShortName">OV5640_REGS[0:3][0:1][7:0]</obj_property>
    </wvobject>
 </wave_config>
