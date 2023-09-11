@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
 set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -78,22 +77,15 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.cache/wt} [current_project]
 set_property parent.project_path {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.xpr} [current_project]
-set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property ip_output_repo {c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/lut_ff.sv}}
-read_ip -quiet {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/ip/mmcm_120mhz/mmcm_120mhz.xci}}
-set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.gen/sources_1/ip/mmcm_120mhz/mmcm_120mhz_board.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.gen/sources_1/ip/mmcm_120mhz/mmcm_120mhz.xdc}}]
-set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.gen/sources_1/ip/mmcm_120mhz/mmcm_120mhz_ooc.xdc}}]
-
+read_verilog -library xil_defaultlib -sv {{C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.srcs/sources_1/new/lut_ff.sv}}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
