@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Sep 11 17:06:41 2023
+# Process ID: 29676
+# Current directory: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30492 C:\Users\Jihoon Lee\Desktop\commento\commento_fpga_material\LiveClass\week3\week3\week3.xpr
+# Log file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/vivado.log
+# Journal file: C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3\vivado.jou
+# Running On: DESKTOP-FG0QD84, OS: Windows, CPU Frequency: 3000 MHz, CPU Physical cores: 8, Host memory: 17109 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week3/week3/week3.xpr}
+update_compile_order -fileset sources_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+place_ports rst R2
+place_ports out2 M1
+place_ports rst N2
+set_property IOSTANDARD LVCMOS33 [get_ports [list out2]]
+save_constraints
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+close_design
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+refresh_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_mmcm [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test_mmcm.tcl
+close_sim

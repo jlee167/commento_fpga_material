@@ -89,21 +89,22 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/spi_bmp280.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/sccb_wr.sv">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/i2c_top.sv">
-        <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/spi_bmp280.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -129,7 +130,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="i2c_top"/>
+        <Option Name="TopModule" Val="spi_bmp280"/>
         <Option Name="dataflowViewerSettings" Val="min_width=16"/>
       </Config>
     </FileSet>
@@ -137,19 +138,18 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/spi.xdc">
         <FileInfo>
-          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/constrs_1/new/i2c.xdc">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/i2c.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
@@ -185,7 +185,6 @@
     <FileSet Name="ila_spi" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_spi" RelGenDir="$PGENDIR/ila_spi">
       <File Path="$PSRCDIR/sources_1/ip/ila_spi/ila_spi.xci">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -200,7 +199,6 @@
     <FileSet Name="vio" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vio" RelGenDir="$PGENDIR/vio">
       <File Path="$PSRCDIR/sources_1/ip/vio/vio.xci">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -215,7 +213,6 @@
     <FileSet Name="mmcm_spi" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mmcm_spi" RelGenDir="$PGENDIR/mmcm_spi">
       <File Path="$PSRCDIR/sources_1/ip/mmcm_spi/mmcm_spi.xci">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -230,6 +227,7 @@
     <FileSet Name="mmcm_i2c" Type="BlockSrcs" RelSrcDir="$PSRCDIR/mmcm_i2c" RelGenDir="$PGENDIR/mmcm_i2c">
       <File Path="$PSRCDIR/sources_1/ip/mmcm_i2c/mmcm_i2c.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -244,6 +242,7 @@
     <FileSet Name="ila_i2c" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ila_i2c" RelGenDir="$PGENDIR/ila_i2c">
       <File Path="$PSRCDIR/sources_1/ip/ila_i2c/ila_i2c.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -258,6 +257,7 @@
     <FileSet Name="vio_i2c" Type="BlockSrcs" RelSrcDir="$PSRCDIR/vio_i2c" RelGenDir="$PGENDIR/vio_i2c">
       <File Path="$PSRCDIR/sources_1/ip/vio_i2c/vio_i2c.xci">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
