@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_fir_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="\$unit_fir_sv_2431056135 " />
+            <top_module name="glbl" />
+            <top_module name="tb_fir" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="5.494436 us"></ZoomEndTime>
+      <Cursor1Time time="0.141661 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_fir/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[39:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/test_wave_5m" type="array">
+      <obj_property name="ElementShortName">test_wave_5m[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test_wave_5m[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/test_wave_1m" type="array">
+      <obj_property name="ElementShortName">test_wave_1m[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test_wave_1m[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/k" type="array">
+      <obj_property name="ElementShortName">k[31:0]</obj_property>
+      <obj_property name="ObjectShortName">k[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/fs" type="other">
+      <obj_property name="ElementShortName">fs</obj_property>
+      <obj_property name="ObjectShortName">fs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/t_sample_ns" type="other">
+      <obj_property name="ElementShortName">t_sample_ns</obj_property>
+      <obj_property name="ObjectShortName">t_sample_ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/freq_5m" type="other">
+      <obj_property name="ElementShortName">freq_5m</obj_property>
+      <obj_property name="ObjectShortName">freq_5m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/t_5m_ns" type="other">
+      <obj_property name="ElementShortName">t_5m_ns</obj_property>
+      <obj_property name="ObjectShortName">t_5m_ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/freq_1m" type="other">
+      <obj_property name="ElementShortName">freq_1m</obj_property>
+      <obj_property name="ObjectShortName">freq_1m</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/t_1m_ns" type="other">
+      <obj_property name="ElementShortName">t_1m_ns</obj_property>
+      <obj_property name="ObjectShortName">t_1m_ns</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/PI" type="other">
+      <obj_property name="ElementShortName">PI</obj_property>
+      <obj_property name="ObjectShortName">PI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/test_wave_5m" type="array">
+      <obj_property name="ElementShortName">test_wave_5m[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test_wave_5m[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/test_wave_1m" type="array">
+      <obj_property name="ElementShortName">test_wave_1m[15:0]</obj_property>
+      <obj_property name="ObjectShortName">test_wave_1m[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider135">
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/data_in" type="array">
+      <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/data_out" type="array">
+      <obj_property name="ElementShortName">data_out[39:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[39:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/coeff_fixed" type="array">
+      <obj_property name="ElementShortName">coeff_fixed[0:31][15:0]</obj_property>
+      <obj_property name="ObjectShortName">coeff_fixed[0:31][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/data_reg" type="array">
+      <obj_property name="ElementShortName">data_reg[0:31][15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_reg[0:31][15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/mult_out" type="array">
+      <obj_property name="ElementShortName">mult_out[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">mult_out[0:31][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_fir/dut/coeff_float" type="array">
+      <obj_property name="ElementShortName">coeff_float[0:31]</obj_property>
+      <obj_property name="ObjectShortName">coeff_float[0:31]</obj_property>
+   </wvobject>
+</wave_config>

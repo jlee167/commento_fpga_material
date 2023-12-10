@@ -1,0 +1,386 @@
+
+*** Running vivado
+    with args -log fir_direct.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source fir_direct.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source fir_direct.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/utils_1/imports/synth_1/tb_fir.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/utils_1/imports/synth_1/tb_fir.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top fir_direct -part xc7a100tifgg484-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100ti'
+INFO: [Device 21-403] Loading part xc7a100tifgg484-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 90740
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1238.766 ; gain = 408.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'fir_direct' [C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/sources_1/new/fir.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'fir_direct' (0#1) [C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/sources_1/new/fir.sv:10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1329.367 ; gain = 499.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1329.367 ; gain = 499.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1329.367 ; gain = 499.023
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 1329.367 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/constrs_1/new/main.xdc]
+Finished Parsing XDC File [C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.srcs/constrs_1/new/main.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1381.145 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1381.145 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [F:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tifgg484-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	  16 Input   21 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 45    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mult_out[1], operation Mode is: (D'+A'')*(B:0x7b).
+DSP Report: register data_reg_reg[30] is absorbed into DSP mult_out[1].
+DSP Report: register data_reg_reg[0] is absorbed into DSP mult_out[1].
+DSP Report: register data_reg_reg[1] is absorbed into DSP mult_out[1].
+DSP Report: operator mult_out[1] is absorbed into DSP mult_out[1].
+DSP Report: operator mult_out[1]0 is absorbed into DSP mult_out[1].
+DSP Report: Generating DSP mult_out[2], operation Mode is: (D'+A'')*(B:0xab).
+DSP Report: register data_reg_reg[29] is absorbed into DSP mult_out[2].
+DSP Report: register data_reg_reg[1] is absorbed into DSP mult_out[2].
+DSP Report: register data_reg_reg[2] is absorbed into DSP mult_out[2].
+DSP Report: operator mult_out[2] is absorbed into DSP mult_out[2].
+DSP Report: operator mult_out[2]0 is absorbed into DSP mult_out[2].
+DSP Report: Generating DSP mult_out[3], operation Mode is: (D'+ACIN2)*(B:0xfb).
+DSP Report: register data_reg_reg[28] is absorbed into DSP mult_out[3].
+DSP Report: register data_reg_reg[3] is absorbed into DSP mult_out[3].
+DSP Report: operator mult_out[3] is absorbed into DSP mult_out[3].
+DSP Report: operator mult_out[3]0 is absorbed into DSP mult_out[3].
+DSP Report: Generating DSP mult_out[4], operation Mode is: (D'+ACIN2)*(B:0x16a).
+DSP Report: register data_reg_reg[27] is absorbed into DSP mult_out[4].
+DSP Report: register data_reg_reg[4] is absorbed into DSP mult_out[4].
+DSP Report: operator mult_out[4] is absorbed into DSP mult_out[4].
+DSP Report: operator mult_out[4]0 is absorbed into DSP mult_out[4].
+DSP Report: Generating DSP mult_out[5], operation Mode is: (D'+ACIN2)*(B:0x1f7).
+DSP Report: register data_reg_reg[26] is absorbed into DSP mult_out[5].
+DSP Report: register data_reg_reg[5] is absorbed into DSP mult_out[5].
+DSP Report: operator mult_out[5] is absorbed into DSP mult_out[5].
+DSP Report: operator mult_out[5]0 is absorbed into DSP mult_out[5].
+DSP Report: Generating DSP mult_out[6], operation Mode is: (D'+ACIN2)*(B:0x29e).
+DSP Report: register data_reg_reg[25] is absorbed into DSP mult_out[6].
+DSP Report: register data_reg_reg[6] is absorbed into DSP mult_out[6].
+DSP Report: operator mult_out[6] is absorbed into DSP mult_out[6].
+DSP Report: operator mult_out[6]0 is absorbed into DSP mult_out[6].
+DSP Report: Generating DSP mult_out[7], operation Mode is: (D'+ACIN2)*(B:0x35b).
+DSP Report: register data_reg_reg[24] is absorbed into DSP mult_out[7].
+DSP Report: register data_reg_reg[7] is absorbed into DSP mult_out[7].
+DSP Report: operator mult_out[7] is absorbed into DSP mult_out[7].
+DSP Report: operator mult_out[7]0 is absorbed into DSP mult_out[7].
+DSP Report: Generating DSP mult_out[8], operation Mode is: (D'+ACIN2)*(B:0x425).
+DSP Report: register data_reg_reg[23] is absorbed into DSP mult_out[8].
+DSP Report: register data_reg_reg[8] is absorbed into DSP mult_out[8].
+DSP Report: operator mult_out[8] is absorbed into DSP mult_out[8].
+DSP Report: operator mult_out[8]0 is absorbed into DSP mult_out[8].
+DSP Report: Generating DSP mult_out[9], operation Mode is: (D'+ACIN2)*(B:0x4f3).
+DSP Report: register data_reg_reg[22] is absorbed into DSP mult_out[9].
+DSP Report: register data_reg_reg[9] is absorbed into DSP mult_out[9].
+DSP Report: operator mult_out[9] is absorbed into DSP mult_out[9].
+DSP Report: operator mult_out[9]0 is absorbed into DSP mult_out[9].
+DSP Report: Generating DSP mult_out[10], operation Mode is: (D'+ACIN2)*(B:0x5bd).
+DSP Report: register data_reg_reg[21] is absorbed into DSP mult_out[10].
+DSP Report: register data_reg_reg[10] is absorbed into DSP mult_out[10].
+DSP Report: operator mult_out[10] is absorbed into DSP mult_out[10].
+DSP Report: operator mult_out[10]0 is absorbed into DSP mult_out[10].
+DSP Report: Generating DSP mult_out[11], operation Mode is: (D'+ACIN2)*(B:0x677).
+DSP Report: register data_reg_reg[20] is absorbed into DSP mult_out[11].
+DSP Report: register data_reg_reg[11] is absorbed into DSP mult_out[11].
+DSP Report: operator mult_out[11] is absorbed into DSP mult_out[11].
+DSP Report: operator mult_out[11]0 is absorbed into DSP mult_out[11].
+DSP Report: Generating DSP mult_out[12], operation Mode is: (D'+ACIN2)*(B:0x71a).
+DSP Report: register data_reg_reg[19] is absorbed into DSP mult_out[12].
+DSP Report: register data_reg_reg[12] is absorbed into DSP mult_out[12].
+DSP Report: operator mult_out[12] is absorbed into DSP mult_out[12].
+DSP Report: operator mult_out[12]0 is absorbed into DSP mult_out[12].
+DSP Report: Generating DSP mult_out[13], operation Mode is: (D'+ACIN2)*(B:0x79c).
+DSP Report: register data_reg_reg[18] is absorbed into DSP mult_out[13].
+DSP Report: register data_reg_reg[13] is absorbed into DSP mult_out[13].
+DSP Report: operator mult_out[13] is absorbed into DSP mult_out[13].
+DSP Report: operator mult_out[13]0 is absorbed into DSP mult_out[13].
+DSP Report: Generating DSP mult_out[14], operation Mode is: (D'+ACIN2)*(B:0x7f7).
+DSP Report: register data_reg_reg[17] is absorbed into DSP mult_out[14].
+DSP Report: register data_reg_reg[14] is absorbed into DSP mult_out[14].
+DSP Report: operator mult_out[14] is absorbed into DSP mult_out[14].
+DSP Report: operator mult_out[14]0 is absorbed into DSP mult_out[14].
+DSP Report: Generating DSP mult_out[15], operation Mode is: (D'+ACIN'')*(B:0x825).
+DSP Report: register data_reg_reg[15] is absorbed into DSP mult_out[15].
+DSP Report: register data_reg_reg[16] is absorbed into DSP mult_out[15].
+DSP Report: register data_reg_reg[15] is absorbed into DSP mult_out[15].
+DSP Report: operator mult_out[15] is absorbed into DSP mult_out[15].
+DSP Report: operator mult_out[15]0 is absorbed into DSP mult_out[15].
+DSP Report: Generating DSP mult_out[0], operation Mode is: (D'+A'')*(B:0x67).
+DSP Report: register data_reg_reg[30] is absorbed into DSP mult_out[0].
+DSP Report: register data_reg_reg[0] is absorbed into DSP mult_out[0].
+DSP Report: register data_reg_reg[31] is absorbed into DSP mult_out[0].
+DSP Report: operator mult_out[0] is absorbed into DSP mult_out[0].
+DSP Report: operator mult_out[0]0 is absorbed into DSP mult_out[0].
+WARNING: [Synth 8-3917] design fir_direct has port data_out[31] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[30] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[29] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[28] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[27] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[26] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[25] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[24] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[23] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[22] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[21] driven by constant 0
+WARNING: [Synth 8-3917] design fir_direct has port data_out[20] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping           | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir_direct  | (D'+A'')*(B:0x7b)     | 16     | 8      | -      | 16     | 25     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+A'')*(B:0xab)     | 16     | 9      | -      | 16     | 26     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0xfb)   | 16     | 9      | -      | 16     | 26     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x16a)  | 16     | 10     | -      | 16     | 27     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x1f7)  | 16     | 10     | -      | 16     | 27     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x29e)  | 16     | 11     | -      | 16     | 28     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x35b)  | 16     | 11     | -      | 16     | 28     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x425)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x4f3)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x5bd)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x677)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x71a)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x79c)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN2)*(B:0x7f7)  | 16     | 12     | -      | 16     | 29     | 1    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+ACIN'')*(B:0x825) | 16     | 13     | -      | 16     | 30     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
+|fir_direct  | (D'+A'')*(B:0x67)     | 16     | 8      | -      | 16     | 25     | 2    | 0    | -    | 1    | 0     | 0    | 0    | 
++------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.145 ; gain = 550.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1387.293 ; gain = 556.949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|fir_direct  | data_reg_reg[14][15] | 14     | 16    | NO           | NO                 | YES               | 16     | 0       | 
++------------+----------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|fir_direct  | D'+A''*B    | 30     | 7      | -      | 25     | 25     | 2    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A''*B    | 30     | 8      | -      | 25     | 26     | 2    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 8      | -      | 25     | 26     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 9      | -      | 25     | 27     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 9      | -      | 25     | 27     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 10     | -      | 25     | 28     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 10     | -      | 25     | 28     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A'*B     | 0      | 11     | -      | 25     | 29     | 1    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A''*B    | 0      | 12     | -      | 25     | 30     | 2    | 0    | -    | 0    | 0     | 0    | 0    | 
+|fir_direct  | D'+A''*B    | 30     | 7      | -      | 25     | 25     | 2    | 0    | -    | 0    | 0     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |    34|
+|3     |DSP48E1 |    16|
+|6     |LUT2    |     6|
+|7     |LUT3    |    94|
+|8     |LUT4    |    73|
+|9     |LUT5    |    22|
+|10    |LUT6    |    35|
+|11    |SRL16E  |    16|
+|12    |FDRE    |   272|
+|13    |IBUF    |    17|
+|14    |OBUF    |    32|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1395.664 ; gain = 565.320
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1395.664 ; gain = 513.543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1395.664 ; gain = 565.320
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1407.676 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 50 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1409.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: d388457e
+INFO: [Common 17-83] Releasing license: Synthesis
+24 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1409.371 ; gain = 974.664
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Jihoon Lee/Desktop/fir_example/fir_example.runs/synth_1/fir_direct.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file fir_direct_utilization_synth.rpt -pb fir_direct_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 16:57:37 2023...

@@ -1,0 +1,894 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Sun Dec 10 16:58:47 2023
+| Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -report_unconstrained -file fir_direct_timing_summary_routed.rpt -pb fir_direct_timing_summary_routed.pb -rpx fir_direct_timing_summary_routed.rpx -warn_on_violation
+| Design       : fir_direct
+| Device       : 7a100ti-fgg484
+| Speed File   : -1L  PRODUCTION 1.23 2018-06-13
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+Rule       Severity          Description                  Violations  
+---------  ----------------  ---------------------------  ----------  
+TIMING-17  Critical Warning  Non-clocked sequential cell  304         
+
+Note: This report is based on the most recent report_methodology run and may not be up-to-date. Run report_methodology on the current design for the latest report.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (304)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (1168)
+5. checking no_input_delay (16)
+6. checking no_output_delay (20)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (304)
+--------------------------
+ There are 304 register/latch pins with no clock driven by root clock pin: clk (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (1168)
+---------------------------------------------------
+ There are 1168 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (16)
+-------------------------------
+ There are 16 input ports with no input delay specified. (HIGH)
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (20)
+--------------------------------
+ There are 20 ports with no output delay specified. (HIGH)
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+        inf        0.000                      0                 1188          inf        0.000                      0                 1188           NA           NA                      NA                    NA  
+
+
+There are no user specified timing constraints.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay          1188 Endpoints
+Min Delay          1188 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[17]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.198ns  (logic 12.474ns (58.847%)  route 8.724ns (41.153%))
+  Logic Levels:           15  (CARRY4=6 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    11.575 r  data_out_OBUF[11]_inst_i_15/CO[3]
+                         net (fo=1, routed)           0.000    11.575    data_out_OBUF[11]_inst_i_15_n_0
+    SLICE_X11Y41         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    11.888 r  data_out_OBUF[15]_inst_i_11/O[3]
+                         net (fo=3, routed)           1.422    13.310    data_out_OBUF[15]_inst_i_11_n_4
+    SLICE_X11Y29         LUT3 (Prop_lut3_I1_O)        0.334    13.644 r  data_out_OBUF[15]_inst_i_13/O
+                         net (fo=2, routed)           0.452    14.096    data_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X11Y29         LUT5 (Prop_lut5_I1_O)        0.326    14.422 r  data_out_OBUF[15]_inst_i_5/O
+                         net (fo=2, routed)           0.783    15.206    data_out_OBUF[15]_inst_i_5_n_0
+    SLICE_X10Y29         LUT6 (Prop_lut6_I0_O)        0.124    15.330 r  data_out_OBUF[15]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.330    data_out_OBUF[15]_inst_i_9_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.843 r  data_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.843    data_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X10Y30         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    16.166 r  data_out_OBUF[19]_inst_i_1/O[1]
+                         net (fo=1, routed)           2.126    18.292    data_out_OBUF[17]
+    AB10                 OBUF (Prop_obuf_I_O)         2.906    21.198 r  data_out_OBUF[17]_inst/O
+                         net (fo=0)                   0.000    21.198    data_out[17]
+    AB10                                                              r  data_out[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[19]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.191ns  (logic 12.456ns (58.779%)  route 8.735ns (41.221%))
+  Logic Levels:           15  (CARRY4=6 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    11.575 r  data_out_OBUF[11]_inst_i_15/CO[3]
+                         net (fo=1, routed)           0.000    11.575    data_out_OBUF[11]_inst_i_15_n_0
+    SLICE_X11Y41         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    11.888 r  data_out_OBUF[15]_inst_i_11/O[3]
+                         net (fo=3, routed)           1.422    13.310    data_out_OBUF[15]_inst_i_11_n_4
+    SLICE_X11Y29         LUT3 (Prop_lut3_I1_O)        0.334    13.644 r  data_out_OBUF[15]_inst_i_13/O
+                         net (fo=2, routed)           0.452    14.096    data_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X11Y29         LUT5 (Prop_lut5_I1_O)        0.326    14.422 r  data_out_OBUF[15]_inst_i_5/O
+                         net (fo=2, routed)           0.783    15.206    data_out_OBUF[15]_inst_i_5_n_0
+    SLICE_X10Y29         LUT6 (Prop_lut6_I0_O)        0.124    15.330 r  data_out_OBUF[15]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.330    data_out_OBUF[15]_inst_i_9_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.843 r  data_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.843    data_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X10Y30         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    16.158 r  data_out_OBUF[19]_inst_i_1/O[3]
+                         net (fo=1, routed)           2.138    18.295    data_out_OBUF[19]
+    AB12                 OBUF (Prop_obuf_I_O)         2.896    21.191 r  data_out_OBUF[19]_inst/O
+                         net (fo=0)                   0.000    21.191    data_out[19]
+    AB12                                                              r  data_out[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[18]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.099ns  (logic 12.378ns (58.669%)  route 8.720ns (41.331%))
+  Logic Levels:           15  (CARRY4=6 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    11.575 r  data_out_OBUF[11]_inst_i_15/CO[3]
+                         net (fo=1, routed)           0.000    11.575    data_out_OBUF[11]_inst_i_15_n_0
+    SLICE_X11Y41         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    11.888 r  data_out_OBUF[15]_inst_i_11/O[3]
+                         net (fo=3, routed)           1.422    13.310    data_out_OBUF[15]_inst_i_11_n_4
+    SLICE_X11Y29         LUT3 (Prop_lut3_I1_O)        0.334    13.644 r  data_out_OBUF[15]_inst_i_13/O
+                         net (fo=2, routed)           0.452    14.096    data_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X11Y29         LUT5 (Prop_lut5_I1_O)        0.326    14.422 r  data_out_OBUF[15]_inst_i_5/O
+                         net (fo=2, routed)           0.783    15.206    data_out_OBUF[15]_inst_i_5_n_0
+    SLICE_X10Y29         LUT6 (Prop_lut6_I0_O)        0.124    15.330 r  data_out_OBUF[15]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.330    data_out_OBUF[15]_inst_i_9_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.843 r  data_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.843    data_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X10Y30         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    16.082 r  data_out_OBUF[19]_inst_i_1/O[2]
+                         net (fo=1, routed)           2.123    18.204    data_out_OBUF[18]
+    AA9                  OBUF (Prop_obuf_I_O)         2.894    21.099 r  data_out_OBUF[18]_inst/O
+                         net (fo=0)                   0.000    21.099    data_out[18]
+    AA9                                                               r  data_out[18] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[16]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        21.020ns  (logic 12.332ns (58.670%)  route 8.688ns (41.330%))
+  Logic Levels:           15  (CARRY4=6 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398    11.575 r  data_out_OBUF[11]_inst_i_15/CO[3]
+                         net (fo=1, routed)           0.000    11.575    data_out_OBUF[11]_inst_i_15_n_0
+    SLICE_X11Y41         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313    11.888 r  data_out_OBUF[15]_inst_i_11/O[3]
+                         net (fo=3, routed)           1.422    13.310    data_out_OBUF[15]_inst_i_11_n_4
+    SLICE_X11Y29         LUT3 (Prop_lut3_I1_O)        0.334    13.644 r  data_out_OBUF[15]_inst_i_13/O
+                         net (fo=2, routed)           0.452    14.096    data_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X11Y29         LUT5 (Prop_lut5_I1_O)        0.326    14.422 r  data_out_OBUF[15]_inst_i_5/O
+                         net (fo=2, routed)           0.783    15.206    data_out_OBUF[15]_inst_i_5_n_0
+    SLICE_X10Y29         LUT6 (Prop_lut6_I0_O)        0.124    15.330 r  data_out_OBUF[15]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.330    data_out_OBUF[15]_inst_i_9_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.843 r  data_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.843    data_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X10Y30         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    16.062 r  data_out_OBUF[19]_inst_i_1/O[0]
+                         net (fo=1, routed)           2.090    18.152    data_out_OBUF[16]
+    AA10                 OBUF (Prop_obuf_I_O)         2.868    21.020 r  data_out_OBUF[16]_inst/O
+                         net (fo=0)                   0.000    21.020    data_out[16]
+    AA10                                                              r  data_out[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[14]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.897ns  (logic 11.789ns (56.418%)  route 9.107ns (43.582%))
+  Logic Levels:           14  (CARRY4=5 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.661 r  data_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.661    data_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239    15.900 r  data_out_OBUF[15]_inst_i_1/O[2]
+                         net (fo=1, routed)           2.103    18.002    data_out_OBUF[14]
+    V10                  OBUF (Prop_obuf_I_O)         2.894    20.897 r  data_out_OBUF[14]_inst/O
+                         net (fo=0)                   0.000    20.897    data_out[14]
+    V10                                                               r  data_out[14] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[13]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.828ns  (logic 11.876ns (57.019%)  route 8.952ns (42.981%))
+  Logic Levels:           14  (CARRY4=5 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.661 r  data_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.661    data_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323    15.984 r  data_out_OBUF[15]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.947    17.931    data_out_OBUF[13]
+    W10                  OBUF (Prop_obuf_I_O)         2.897    20.828 r  data_out_OBUF[13]_inst/O
+                         net (fo=0)                   0.000    20.828    data_out[13]
+    W10                                                               r  data_out[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[15]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.817ns  (logic 11.860ns (56.971%)  route 8.957ns (43.029%))
+  Logic Levels:           14  (CARRY4=5 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.661 r  data_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.661    data_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.315    15.976 r  data_out_OBUF[15]_inst_i_1/O[3]
+                         net (fo=1, routed)           1.953    17.928    data_out_OBUF[15]
+    AA11                 OBUF (Prop_obuf_I_O)         2.889    20.817 r  data_out_OBUF[15]_inst/O
+                         net (fo=0)                   0.000    20.817    data_out[15]
+    AA11                                                              r  data_out[15] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.763ns  (logic 11.560ns (55.676%)  route 9.203ns (44.324%))
+  Logic Levels:           13  (CARRY4=4 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.544    15.692 r  data_out_OBUF[11]_inst_i_1/O[2]
+                         net (fo=1, routed)           2.198    17.890    data_out_OBUF[10]
+    W12                  OBUF (Prop_obuf_I_O)         2.873    20.763 r  data_out_OBUF[10]_inst/O
+                         net (fo=0)                   0.000    20.763    data_out[10]
+    W12                                                               r  data_out[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[11]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.728ns  (logic 11.630ns (56.108%)  route 9.098ns (43.892%))
+  Logic Levels:           13  (CARRY4=4 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_O[3])
+                                                      0.608    15.756 r  data_out_OBUF[11]_inst_i_1/O[3]
+                         net (fo=1, routed)           2.093    17.849    data_out_OBUF[11]
+    W11                  OBUF (Prop_obuf_I_O)         2.879    20.728 r  data_out_OBUF[11]_inst/O
+                         net (fo=0)                   0.000    20.728    data_out[11]
+    W11                                                               r  data_out[11] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[13]/CLK
+                            (rising edge-triggered cell DSP48E1)
+  Destination:            data_out[12]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        20.700ns  (logic 11.743ns (56.730%)  route 8.957ns (43.270%))
+  Logic Levels:           14  (CARRY4=5 DSP48E1=1 LUT3=3 LUT4=2 LUT5=1 LUT6=1 OBUF=1)
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y17          DSP48E1                      0.000     0.000 r  mult_out[13]/CLK
+    DSP48_X0Y17          DSP48E1 (Prop_dsp48e1_CLK_P[17])
+                                                      5.368     5.368 r  mult_out[13]/P[17]
+                         net (fo=2, routed)           1.396     6.764    mult_out_n_88_[13]
+    SLICE_X12Y39         LUT3 (Prop_lut3_I2_O)        0.152     6.916 r  data_out_OBUF[11]_inst_i_53/O
+                         net (fo=2, routed)           0.859     7.776    data_out_OBUF[11]_inst_i_53_n_0
+    SLICE_X12Y39         LUT4 (Prop_lut4_I3_O)        0.348     8.124 r  data_out_OBUF[11]_inst_i_56/O
+                         net (fo=1, routed)           0.000     8.124    data_out_OBUF[11]_inst_i_56_n_0
+    SLICE_X12Y39         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.380     8.504 r  data_out_OBUF[11]_inst_i_50/CO[3]
+                         net (fo=1, routed)           0.000     8.504    data_out_OBUF[11]_inst_i_50_n_0
+    SLICE_X12Y40         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.323     8.827 r  data_out_OBUF[15]_inst_i_41/O[1]
+                         net (fo=2, routed)           0.824     9.651    data_out_OBUF[15]_inst_i_41_n_6
+    SLICE_X11Y40         LUT3 (Prop_lut3_I0_O)        0.334     9.985 r  data_out_OBUF[11]_inst_i_35/O
+                         net (fo=2, routed)           0.860    10.845    data_out_OBUF[11]_inst_i_35_n_0
+    SLICE_X11Y40         LUT4 (Prop_lut4_I3_O)        0.332    11.177 r  data_out_OBUF[11]_inst_i_39/O
+                         net (fo=1, routed)           0.000    11.177    data_out_OBUF[11]_inst_i_39_n_0
+    SLICE_X11Y40         CARRY4 (Prop_carry4_S[2]_O[3])
+                                                      0.352    11.529 r  data_out_OBUF[11]_inst_i_15/O[3]
+                         net (fo=3, routed)           1.700    13.229    data_out_OBUF[11]_inst_i_15_n_4
+    SLICE_X9Y27          LUT3 (Prop_lut3_I1_O)        0.306    13.535 r  data_out_OBUF[11]_inst_i_17/O
+                         net (fo=2, routed)           0.673    14.208    data_out_OBUF[11]_inst_i_17_n_0
+    SLICE_X8Y27          LUT5 (Prop_lut5_I1_O)        0.124    14.332 r  data_out_OBUF[11]_inst_i_5/O
+                         net (fo=2, routed)           0.692    15.024    data_out_OBUF[11]_inst_i_5_n_0
+    SLICE_X10Y28         LUT6 (Prop_lut6_I0_O)        0.124    15.148 r  data_out_OBUF[11]_inst_i_9/O
+                         net (fo=1, routed)           0.000    15.148    data_out_OBUF[11]_inst_i_9_n_0
+    SLICE_X10Y28         CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.513    15.661 r  data_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000    15.661    data_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X10Y29         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    15.880 r  data_out_OBUF[15]_inst_i_1/O[0]
+                         net (fo=1, routed)           1.952    17.832    data_out_OBUF[12]
+    Y12                  OBUF (Prop_obuf_I_O)         2.868    20.700 r  data_out_OBUF[12]_inst/O
+                         net (fo=0)                   0.000    20.700    data_out[12]
+    Y12                                                               r  data_out[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[0]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[0]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[0]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_53_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[0]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[10]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[10]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[10]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_43_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[10]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[11]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[11]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[11]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_42_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[11]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[12]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[12]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[12]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_41_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[12]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[13]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[13]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[13]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_40_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[13]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[14]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[14]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[14]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_39_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[14]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[15]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[15]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[15]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_38_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[15]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[16]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[16]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[16]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_37_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[16]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[17]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[17]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[17]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_36_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[17]
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 mult_out[2]/ACOUT[18]
+                            (internal pin)
+  Destination:            mult_out[3]/ACIN[18]
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.002ns  (logic 0.000ns (0.000%)  route 0.002ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    DSP48_X0Y6           DSP48E1                      0.000     0.000 r  mult_out[2]/ACOUT[18]
+                         net (fo=1, routed)           0.002     0.002    mult_out_n_35_[2]
+    DSP48_X0Y7           DSP48E1                                      r  mult_out[3]/ACIN[18]
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
