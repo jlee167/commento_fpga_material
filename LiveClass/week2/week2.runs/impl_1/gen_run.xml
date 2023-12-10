@@ -1,88 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1690206535">
-  <File Type="ROUTE-PWR" Name="fsm_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="fsm.tcl"/>
-  <File Type="BITSTR-MMI" Name="fsm.mmi"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="fsm_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="fsm_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="fsm_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="fsm_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="fsm_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="fsm_opt.dcp"/>
-  <File Type="OPT-DRC" Name="fsm_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="fsm.hwdef"/>
-  <File Type="PWROPT-DCP" Name="fsm_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="fsm_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="fsm_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="fsm_placed.dcp"/>
-  <File Type="PLACE-IO" Name="fsm_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="fsm_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="fsm_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="fsm_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="fsm_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="fsm_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="fsm_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="fsm.bin"/>
-  <File Type="PLACE-TIMING" Name="fsm_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="fsm_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="fsm.msk"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="fsm_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="fsm_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="fsm_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="fsm.rbt"/>
-  <File Type="PHYSOPT-TIMING" Name="fsm_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="fsm_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="fsm_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="fsm_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="fsm_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="fsm_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="fsm_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="fsm_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fsm_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fsm_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="fsm_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="fsm_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="fsm_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="fsm_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="fsm_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="fsm_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="fsm_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="fsm_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="fsm_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="fsm_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="fsm_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fsm_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fsm_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fsm_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fsm_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fsm_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fsm_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="fsm.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fsm_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fsm_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-NKY" Name="fsm.nky"/>
-  <File Type="BITSTR-BMM" Name="fsm_bd.bmm"/>
-  <File Type="PDI-FILE" Name="fsm.pdi"/>
-  <File Type="RCFI_FILE" Name="fsm.rcfi"/>
-  <File Type="CFI_FILE" Name="fsm.cfi"/>
-  <File Type="RNPI_FILE" Name="fsm.rnpi"/>
-  <File Type="NPI_FILE" Name="fsm.npi"/>
-  <File Type="RBD_FILE" Name="fsm.rbd"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1699789462">
+  <File Type="OPT-HWDEF" Name="xor_gate.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW" Name="xor_gate_bus_skew_routed.rpt"/>
+  <File Type="PA-DCP" Name="xor_gate.dcp"/>
+  <File Type="ROUTE-PWR" Name="xor_gate_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="xor_gate.tcl"/>
+  <File Type="BITSTR-MMI" Name="xor_gate.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="xor_gate_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="xor_gate_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="xor_gate_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="xor_gate_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="xor_gate_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="xor_gate_opt.dcp"/>
+  <File Type="OPT-DRC" Name="xor_gate_drc_opted.rpt"/>
+  <File Type="PWROPT-DCP" Name="xor_gate_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="xor_gate_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="xor_gate_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="xor_gate_placed.dcp"/>
+  <File Type="PLACE-IO" Name="xor_gate_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="xor_gate_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="xor_gate_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="xor_gate_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="xor_gate_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="xor_gate_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="xor_gate_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="xor_gate.bin"/>
+  <File Type="PLACE-TIMING" Name="xor_gate_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="xor_gate_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="xor_gate.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="xor_gate_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="xor_gate_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="xor_gate_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="xor_gate.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="xor_gate_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="xor_gate_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="xor_gate_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="xor_gate_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="xor_gate_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="xor_gate_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="xor_gate_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="xor_gate_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="xor_gate_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="xor_gate_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="xor_gate_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="xor_gate_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="xor_gate_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="xor_gate_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="xor_gate_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="xor_gate_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="xor_gate_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="xor_gate_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="xor_gate_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="xor_gate_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="xor_gate_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="xor_gate_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="xor_gate_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="xor_gate_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="xor_gate_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="xor_gate_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="xor_gate.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="xor_gate_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="xor_gate_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="xor_gate.nky"/>
+  <File Type="BITSTR-BMM" Name="xor_gate_bd.bmm"/>
+  <File Type="PDI-FILE" Name="xor_gate.pdi"/>
+  <File Type="RCFI_FILE" Name="xor_gate.rcfi"/>
+  <File Type="CFI_FILE" Name="xor_gate.cfi"/>
+  <File Type="RNPI_FILE" Name="xor_gate.rnpi"/>
+  <File Type="NPI_FILE" Name="xor_gate.npi"/>
+  <File Type="RBD_FILE" Name="xor_gate.rbd"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="fsm.ltx"/>
-  <File Type="BITSTR-SYSDEF" Name="fsm.sysdef"/>
-  <File Type="BG-BGN" Name="fsm.bgn"/>
-  <File Type="BG-DRC" Name="fsm.drc"/>
-  <File Type="RDI-RDI" Name="fsm.vdi"/>
+  <File Type="BITSTR-LTX" Name="xor_gate.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="xor_gate.sysdef"/>
+  <File Type="BG-BGN" Name="xor_gate.bgn"/>
+  <File Type="BG-DRC" Name="xor_gate.drc"/>
+  <File Type="RDI-RDI" Name="xor_gate.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="ROUTE-RQS" Name="fsm_routed.rqs"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="fsm_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="xor_gate_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="xor_gate_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/xor.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/fsm.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -96,9 +105,49 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/top_practice.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/bit8adder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/testbench.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/halfadder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/fulladder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="fsm"/>
+      <Option Name="TopModule" Val="xor_gate"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -146,7 +195,4 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mmcm_50m"/>
-  <BlockFileSet Type="BlockSrcs" Name="ila"/>
-  <BlockFileSet Type="BlockSrcs" Name="vio"/>
 </GenRun>

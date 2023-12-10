@@ -3,7 +3,10 @@
 Oct 14 2022
 05:20:55
 C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/testbench.sv,1693231897,systemVerilog,,,,testbench,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv,1693232283,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/testbench.sv,,and_gate;half_adder;xor_gate,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/tb_and_gate.sv,1699190295,systemVerilog,,,,tb_and_gate,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/testbench.sv,1699171874,systemVerilog,,,,testbench,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/and_gate.sv,1699189106,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/tb_and_gate.sv,,and_gate_2,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv,1693232283,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sim_1/new/tb_and_gate.sv,,and_gate;half_adder;xor_gate,,uvm,,,,,,
 C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/tb_counter.sv,1693215016,systemVerilog,,,,tb_counter,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/tb_procedure.sv,1693150498,systemVerilog,,,,tb_procedure,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/tb_procedure.sv,1699191084,systemVerilog,,,,tb_procedure,,uvm,,,,,,
+C:/Users/Jihoon Lee/Downloads/ham-cf6379542e4e9659eb8468e2e432529141a29caa/ham-cf6379542e4e9659eb8468e2e432529141a29caa/vivado/trafficlight/traffic_light.sv,1700146649,systemVerilog,,,,traffic_light,,uvm,,,,,,

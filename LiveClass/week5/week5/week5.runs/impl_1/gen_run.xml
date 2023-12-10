@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7k70tfbv484-1" LaunchTime="1692191594">
-  <File Type="OPT-HWDEF" Name="cdc_2ff.hwdef"/>
-  <File Type="ROUTE-BUS-SKEW" Name="cdc_2ff_bus_skew_routed.rpt"/>
-  <File Type="PA-DCP" Name="cdc_2ff.dcp"/>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv484-1" LaunchTime="1701604175">
   <File Type="ROUTE-PWR" Name="cdc_2ff_power_routed.rpt"/>
   <File Type="PA-TCL" Name="cdc_2ff.tcl"/>
   <File Type="BITSTR-MMI" Name="cdc_2ff.mmi"/>
@@ -13,6 +10,7 @@
   <File Type="OPT-TIMING" Name="cdc_2ff_timing_summary_opted.rpt"/>
   <File Type="OPT-DCP" Name="cdc_2ff_opt.dcp"/>
   <File Type="OPT-DRC" Name="cdc_2ff_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="cdc_2ff.hwdef"/>
   <File Type="PWROPT-DCP" Name="cdc_2ff_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="cdc_2ff_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="cdc_2ff_timing_summary_pwropted.rpt"/>
@@ -50,6 +48,7 @@
   <File Type="ROUTE-TIMING-RPX" Name="cdc_2ff_timing_summary_routed.rpx"/>
   <File Type="ROUTE-SIMILARITY" Name="cdc_2ff_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="cdc_2ff_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="cdc_2ff_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="cdc_2ff_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="cdc_2ff_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="cdc_2ff_postroute_physopt.dcp"/>
@@ -97,10 +96,17 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/lvds_inv.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="cdc_2ff"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -131,9 +137,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

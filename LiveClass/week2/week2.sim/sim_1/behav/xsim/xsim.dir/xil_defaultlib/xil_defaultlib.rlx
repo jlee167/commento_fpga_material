@@ -3,6 +3,8 @@
 Oct 14 2022
 05:20:55
 C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.srcs/sim_1/new/sim_top.sv,1690198698,systemVerilog,,,,sim_top,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.srcs/sources_1/new/fsm.sv,1690204754,systemVerilog,,,,fsm,,uvm,,,,,,
-C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.srcs/sources_1/new/top.sv,1690198542,systemVerilog,,C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.srcs/sim_1/new/sim_top.sv,,top,,uvm,,,,,,
+C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week2/week2.srcs/sim_1/new/traffic_light.sv,1699794346,systemVerilog,,,,traffic_light,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,
+C:/Users/Jihoon Lee/Downloads/8bitadder/bit8adder.sv,1699782630,systemVerilog,,C:/Users/Jihoon Lee/Downloads/8bitadder/fulladder.sv,,bit8adder,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,
+C:/Users/Jihoon Lee/Downloads/8bitadder/fulladder.sv,1699607362,systemVerilog,,C:/Users/Jihoon Lee/Downloads/8bitadder/halfadder.sv,,fulladder,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,
+C:/Users/Jihoon Lee/Downloads/8bitadder/halfadder.sv,1699604312,systemVerilog,,C:/Users/Jihoon Lee/Downloads/8bitadder/testbench.sv,,half_adder,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,
+C:/Users/Jihoon Lee/Downloads/8bitadder/testbench.sv,1699788171,systemVerilog,,,,testbench,,uvm,../../../../week2.gen/sources_1/ip/mmcm_50m,,,,,

@@ -1,22 +1,13 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Running: F:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot traffic_light_behav xil_defaultlib.traffic_light xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 35. Module xor_gate doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 23. Module and_gate doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 1. Module half_adder doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 35. Module xor_gate doesn't have a timescale but at least one module in design has a timescale.
-WARNING: [XSIM 43-4099] "C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week1/week1/week1.srcs/sources_1/new/dut.sv" Line 23. Module and_gate doesn't have a timescale but at least one module in design has a timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.xor_gate
-Compiling module xil_defaultlib.and_gate
-Compiling module xil_defaultlib.half_adder
-Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.traffic_light
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot testbench_behav
+Built simulation snapshot traffic_light_behav

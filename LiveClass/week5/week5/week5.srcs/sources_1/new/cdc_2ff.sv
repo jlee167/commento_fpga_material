@@ -6,6 +6,7 @@ module cdc_2ff (
 	output dout
 );
 
+
 /* Regs */
 logic a1;
 logic b1,b2;

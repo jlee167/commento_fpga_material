@@ -70,7 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.statsThreshold 360
 set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7k70tfbv484-1
@@ -89,7 +88,7 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {{C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.srcs/sources_1/new/cdc_2ff.sv}}
-read_ip -quiet {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.srcs/sources_1/ip/mmcm_cdc/mmcm_cdc.xci}}
+read_ip -quiet {{C:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.srcs/sources_1/ip/mmcm_cdc/mmcm_cdc.xci}}
 set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.gen/sources_1/ip/mmcm_cdc/mmcm_cdc_board.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.gen/sources_1/ip/mmcm_cdc/mmcm_cdc.xdc}}]
 set_property used_in_implementation false [get_files -all {{c:/Users/Jihoon Lee/Desktop/commento/commento_fpga_material/LiveClass/week5/week5/week5.gen/sources_1/ip/mmcm_cdc/mmcm_cdc_ooc.xdc}}]

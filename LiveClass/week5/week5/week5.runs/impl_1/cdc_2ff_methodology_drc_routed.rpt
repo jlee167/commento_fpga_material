@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Aug 16 22:14:00 2023
+| Date         : Sun Dec  3 20:51:14 2023
 | Host         : DESKTOP-FG0QD84 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file cdc_2ff_methodology_drc_routed.rpt -pb cdc_2ff_methodology_drc_routed.pb -rpx cdc_2ff_methodology_drc_routed.rpx
 | Design       : cdc_2ff
@@ -20,22 +20,22 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: checkpoint_cdc_2ff
+          Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
              Violations found: 2
-+-----------+----------+-------------------------------+------------+
-| Rule      | Severity | Description                   | Violations |
-+-----------+----------+-------------------------------+------------+
-| TIMING-16 | Warning  | Large setup violation         | 1          |
-| TIMING-18 | Warning  | Missing input or output delay | 1          |
-+-----------+----------+-------------------------------+------------+
++-----------+----------+----------------------------------+------------+
+| Rule      | Severity | Description                      | Violations |
++-----------+----------+----------------------------------+------------+
+| TIMING-10 | Warning  | Missing property on synchronizer | 1          |
+| TIMING-18 | Warning  | Missing input or output delay    | 1          |
++-----------+----------+----------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
-TIMING-16#1 Warning
-Large setup violation  
-There is a large setup violation of -1.322 ns between a1_reg/C (clocked by clk_out1_mmcm_cdc) and b1_reg/D (clocked by clk_out2_mmcm_cdc). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+TIMING-10#1 Warning
+Missing property on synchronizer  
+One or more logic synchronizer has been detected between 2 clock domains but the synchronizer does not have the property ASYNC_REG defined on one or both registers. It is recommended to run report_cdc for a complete and detailed CDC coverage
 Related violations: <none>
 
 TIMING-18#1 Warning

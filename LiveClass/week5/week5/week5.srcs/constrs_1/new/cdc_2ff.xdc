@@ -6,3 +6,5 @@ set_property IOSTANDARD LVCMOS18 [get_ports rst_n]
 set_property PACKAGE_PIN U11 [get_ports din]
 set_property PACKAGE_PIN U12 [get_ports dout]
 set_property PACKAGE_PIN U13 [get_ports rst_n]
+
+set_false_path -from [get_pins a1_reg/C] -to [get_pins b1_reg/D]

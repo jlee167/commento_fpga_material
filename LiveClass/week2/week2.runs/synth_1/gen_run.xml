@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1690206535" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fsm.dcp">
-  <File Type="PA-TCL" Name="fsm.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="fsm_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="fsm_reports.tcl"/>
-  <File Type="RDS-RDS" Name="fsm.vds"/>
-  <File Type="RDS-UTIL" Name="fsm_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="fsm_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="fsm.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="fsm_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="fsm_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1699789449" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/fsm.dcp">
+  <File Type="PA-TCL" Name="xor_gate.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="xor_gate_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="xor_gate_reports.tcl"/>
+  <File Type="RDS-RDS" Name="xor_gate.vds"/>
+  <File Type="RDS-UTIL" Name="xor_gate_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="xor_gate_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="xor_gate.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="xor_gate_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="xor_gate_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/xor.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/fsm.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -26,9 +34,49 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/top_practice.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/bit8adder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/testbench.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/halfadder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../../../Downloads/8bitadder/fulladder.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="fsm"/>
+      <Option Name="TopModule" Val="xor_gate"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -68,7 +116,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="mmcm_50m"/>
-  <BlockFileSet Type="BlockSrcs" Name="ila"/>
-  <BlockFileSet Type="BlockSrcs" Name="vio"/>
 </GenRun>

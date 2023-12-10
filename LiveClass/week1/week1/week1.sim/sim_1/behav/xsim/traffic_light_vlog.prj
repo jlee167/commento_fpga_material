@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../../../../../Downloads/ham-cf6379542e4e9659eb8468e2e432529141a29caa/ham-cf6379542e4e9659eb8468e2e432529141a29caa/vivado/trafficlight/traffic_light.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
