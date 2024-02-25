@@ -22,7 +22,6 @@
 
 module tb_uart_rx();
 
-
 logic rst_n;	
 logic clk; 		
 logic rx;	
@@ -33,10 +32,7 @@ logic fifo_full;
 logic fifo_wr_en;	
 
 
-uart_rx #(
-	 .CLK_FREQ_MHZ(),
-	,.CLK_DIV()
-) dut (
+uart_rx dut (
 	 .rst_n	(rst_n)
 	,.clk 	(clk)	
 	,.rx 	(rx)
@@ -46,6 +42,8 @@ uart_rx #(
 	,.fifo_full		(fifo_full)
 	,.fifo_wr_en	(fifo_wr_en)
 );
+
+
 
 
 

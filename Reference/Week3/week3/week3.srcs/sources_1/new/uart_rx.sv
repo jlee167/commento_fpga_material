@@ -20,7 +20,7 @@ module uart_rx #(
 
 
 logic [7:0] data;
-logic [2:0] idx;
+logic [3:0] idx;
 logic [5:0] ovs_cnt;
 
 
@@ -76,7 +76,7 @@ always_comb begin
 				next_state = GET_DATA;
 
 		GET_DATA:
-			if ((idx == 7) && is_at_edge())
+			if ((idx == 8) && is_at_edge())
 				next_state = GET_STOP_BIT;
 
 		GET_STOP_BIT:	
@@ -129,7 +129,7 @@ always_ff @(posedge clk or negedge rst_n) begin
 
 
 
-		// Oversample 카운터 로직
+		// Oversample 카운?�� 로직
 		case (next_state)
 			READY:
 				ovs_cnt <= 0;
